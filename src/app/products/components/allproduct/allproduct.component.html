@@ -1,0 +1,9 @@
+<div class="m-auto pt-5">
+  <app-search (searchValue)="searchproduct($event)"></app-search>
+</div>
+<div class="row">
+  <div class="col-xl-4 col-md-6" *ngFor="let product of filteredProducts">
+    <app-product [data]='product'></app-product>
+  </div>
+
+</div>
